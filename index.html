@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Acme Support</title>
+</head>
+<body>
+    <header>
+        <h1>Acme Support</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2> Contact Us</h2>
+        <p>If you have any questions or need assistance, please feel free to reach out to us through the following channels:</p>
+        <form action="https://example.com/contact" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                    <option value="">Choose a topic</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="billing">Billing</option>
+                    
+                </select>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+                <div>
+                    <input type="radio" id="hear-search" name="referralSource" value ="search" required>
+                    <label for="hear-search">Search</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="hear-friend" name="referralSource" value="friend" required>
+                    <label for="hear-friend">Friend</label><br>
+                </div>            
+                <div>
+                    <input type="radio" id="hear-social" name="referralSource" value="social-media" required>
+                    <label for="hear-social">Social Media</label><br>
+                </div>
+            </fieldset>
+
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Subscribe to our newsletter</label>
+            </div>
+
+            <div>
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>
